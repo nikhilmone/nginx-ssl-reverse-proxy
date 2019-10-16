@@ -1,0 +1,15 @@
+version: '3'
+services:
+  front:
+  #  build: .
+    image: "nginx:alpine"
+    ports:
+      - "8080:80"
+    volumes:
+      - /Users/nikhil/Documents/nginx/setup/nginx:/etc/nginx
+  #  environment:
+  #    FLASK_ENV: development
+  back:
+    image: "nginx:alpine"
+    ports:
+      - "8090:80"
