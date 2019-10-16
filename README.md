@@ -28,7 +28,7 @@ Keep the certificate generated in the [certs](https://github.com/nikhilmone/ngin
 
 ![](https://github.com/nikhilmone/nginx-ssl-reverse-proxy/blob/master/screenshots/backend2.png)
 
-### Reverse proxy in action for backends:
+# Reverse proxy in action for backends:
 
 ##### Backend 1 through reverse-proxy over HTTPS:
 
