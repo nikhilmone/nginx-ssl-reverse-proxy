@@ -2,14 +2,19 @@ version: '3'
 services:
   front:
   #  build: .
-    image: "nginx:alpine"
+    image: "nginx-front:alpine"
     ports:
-      - "8080:80"
+      - "80:80"
+      - "443:443"
     volumes:
       - /Users/nikhil/Documents/nginx/setup/nginx:/etc/nginx
   #  environment:
   #    FLASK_ENV: development
-  back:
-    image: "nginx:alpine"
+  back1:
+    image: "nginx-back1:alpine"
     ports:
       - "8090:80"
+  back2:
+    image: "nginx-back2:alpine"
+    ports:
+      - "8095:80"
