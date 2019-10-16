@@ -1,14 +1,11 @@
 version: '3'
 services:
   front:
-  #  build: .
     image: "nginx-front:alpine"
     ports:
       - "443:443"
     volumes:
       - /Users/nikhil/Documents/nginx/setup/nginx:/etc/nginx
-  #  environment:
-  #    FLASK_ENV: development
   back1:
     image: "nginx-back1:alpine"
     ports:
